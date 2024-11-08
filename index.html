@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+</head>
+<body>
+
+  <Header>
+
+    <div class="head_container">
+    
+      <div class="logo_container">
+       <img src="./images/logo.svg" alt="logo">
+      </div>
+
+      <div class="nav_container">
+        <p>About</p>
+        <p>Careers</p>
+        <p>Events</p>
+        <p>Products</p>
+        <p>Support</p>
+       <img src="./images/icon-hamburger.svg" alt="nav_pop">
+      </div>
+
+      <div class="hidden" id="nav_page">
+        <div>
+          <img src="./images/logo.svg" alt="logo" id="nav_logo">
+        </div>
+        <div>
+          <img src="./images/icon-close.svg" alt="close" id="nav_close">
+        </div>
+        <div>
+          <p>About</p>
+          <p>Careers</p>
+          <p>Events</p>
+          <p>Products</p>
+          <p>Support</p>
+        </div>
+      </div>
+
+      <div class="title_container">
+        <h1>Immersive <br/> experiences<br/> that<br/> deliver</h1>
+      </div>
+    </div>
+  </Header>
+
+  <main>
+
+    <div class="intro_container">
+
+      <img src="./images/mobile/image-interactive.jpg" alt="vr man">
+
+      <div id="intro_text">
+        <h2>The leader in interactive VR</h2>
+
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+        projects for some of the best companies around the globe. Our award-winning 
+        creations have transformed businesses through digital experiences that bind 
+        to their brand.</p>
+      </div>
+      
+
+    </div>
+
+
+
+    <div class="image_grid">
+
+      <h2>Our creations</h2>
+
+      <h4 id="deep_earth">Deep<br/> earth</h4>
+      <h4 id="night_arcade">Night<br/> arcade</h4>
+      <h4 id="soccer">Soccer<br/> team VR</h4>
+      <h4 id="the_grid"> The<br/> grid</h4>
+      <h4 id="from_above">From up<br/> above VR</h4>
+      <h4 id="pocket_borealis">Pocket<br/> borealis</h4>
+      <h4 id="the_curiosity">The<br/> curiosity</h4>
+      <h4 id="fisheye">Make it<br/> fisheye</h4>
+      <h3 id="mobileSeeAll">See all</h3>
+    </div>
+   
+  </main>
+
+  <footer>
+    <div class="footer_nav">
+      <img src="./images/logo.svg">
+        <div class="footer_nav_links">
+          <p>About</p>
+          <p>Careers</p>
+          <p>Events</p>
+          <p>Products</p>
+          <p>Support</p>
+        </div>
+      <div class="socials">
+        <img src="./images/icon-facebook.svg">
+        <img src="./images/icon-twitter.svg">
+        <img src="./images/icon-pinterest.svg">
+        <img src="./images/icon-instagram.svg">
+      </div>
+      <p id="copyright">© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+    
+  
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+  </footer>
+</body>
+
+<script>
+
+function navOpen() {
+  document.getElementById("nav_page").classList.remove("hidden")
+}
+
+function navClose() {
+  document.getElementById("nav_page").classList.add("hidden")
+}
+
+document.querySelector(".nav_container > img").addEventListener("click", navOpen);
+  
+document.querySelector("#nav_close").addEventListener("click", navClose);
+
+
+
+</script>
+</html>
